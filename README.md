@@ -1,19 +1,69 @@
-# Django Todo List
+# Django ToDo Lists
 
-This folder contains project code for the _Real Python_ step-by-step project for building a to-do app with Django.
+Цей проект є прикладом реалізації ToDo списків з використанням фреймворка Django.
 
-## Setup Instructions
+## Вимоги
 
-These instructions have been tested in Ubuntu Linux and macOS. They should also work in Windows, but note that you'll need to use a different command to activate your virtual environment as described in Step 3. Please consult the [`venv` documentation](https://docs.python.org/3/library/venv.html#creating-virtual-environments) for greater detail on the use of virtual environments.
+Перед початком роботи з цим проектом, переконайтеся, що на вашому комп'ютері встановлені наступні компоненти:
 
-1. Navigate into the project directory (`source_code/`).
-2. Create a virtual environment in a `venv/` folder by typing `python -m venv venv` in your console.
-3. Activate the venv using `source venv/bin/activate` (Linux, MacOS) or `venv\Scripts\activate.bat` (Windows).
-4. Install the dependencies with `python -m pip install -r requirements.txt`
-5. Generate the empty SQLite database and tables using `python manage.py migrate`
-5. Run the app with `python manage.py runserver`
-6. Browse to the [app home page](http://localhost:8000/) to see the list of todo lists, which will initially be empty. 
+- Python версії 3.x
+- Django фреймворк версії 3.x
 
-You can now start using the UI to add your to-do lists and to-do items to the database. The data will be stored in a new `db.sqlite3` file in the root of your project directory.
+## Інсталяція
 
-You can also use Django's auto-generated [admin interface](https://realpython.com/customize-django-admin-python/#setting-up-the-django-admin) at `http://localhost:8000/admin/` to view, add, and edit the data.
+1. Клонуйте репозиторій:
+
+```shell
+git clone https://github.com/your_username/django-todo-lists.git
+```
+
+2. Перейдіть до директорії проекту:
+
+```shell
+cd django-todo-lists
+```
+
+3. Встановіть залежності:
+
+```shell
+pip install -r requirements.txt
+```
+
+## Використання
+
+1. Застосуйте міграції до бази даних:
+
+```shell
+python manage.py migrate
+```
+
+2. Запустіть локальний сервер розробки:
+
+```shell
+python manage.py runserver
+```
+
+3. Відкрийте свій веб-браузер і перейдіть за посиланням:
+
+```
+http://localhost:8000/
+```
+
+4. Ви можете створювати, редагувати та видаляти свої ToDo списки та елементи.
+
+## Допомога та підтримка
+
+Якщо у вас виникли питання або вам потрібна допомога, будь ласка, звертайтесь до автора проекту.
+
+## Внесення внесків
+
+Якщо ви хочете сприяти розвитку цього проекту, будь ласка, створіть pull request із вашими пропозиціями.
+
+## Ліцензія
+
+Цей проект розповсюджується під [Ліцензією MIT](LICENSE).
+```
+
+Будь ласка, зверніть увагу, що ви повинні замінити `"your_username"` у URL клонування репозиторію на ваш власний GitHub ім'я користувача.
+
+Якщо у вас виникнуть додаткові питання, будь ласка, дайте мені знати!
